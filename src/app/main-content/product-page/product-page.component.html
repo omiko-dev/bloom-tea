@@ -1,0 +1,90 @@
+
+
+<app-product-page-first></app-product-page-first>
+
+
+
+
+<section>
+
+<div>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a  routerLink="/Home">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/Tea">Tea</a></li>
+      <li class="breadcrumb-item active" >{{arr.name}}</li>
+    </ol>
+  </nav>
+
+</div>
+
+
+<div class="card-place">
+
+  <div class="product-img">
+    <img [src]="arr.shop_image" alt="">
+  </div>
+
+  <div
+  style="margin-left: 20px;"
+  class="product-info">
+    <h1>{{arr.name}}</h1>
+
+    <p>$ {{arr.price}}</p>
+
+    <p>{{arr.discribe}}</p>
+
+    <p style="font-weight: 400;">Size - {{arr.size}}Gr</p>
+
+    <p style="margin-bottom: 5px;">Quantity:</p>
+
+    <input  type="number" name="number" value="1" min="1"  [(ngModel)]="productNum">
+
+    <button
+    (click)="cartAdder()"
+    style="width: 306px;
+    height: 43.5px;
+    padding: 8px 16px;
+    display: grid;
+    place-content: center;
+    background: none;
+    border: 2px solid var(--col-1);
+    color: var(--col-1);
+    margin-top: 20px;
+    font-family: var(--font-3);
+    font-size: 17px;"
+    >Add to Cart</button>
+
+    <button style="width: 306px;
+    height: 43.5px;
+    padding: 8px 16px;
+    display: grid;
+    place-content: center;
+    background: var(--col-1);
+    border: 2px solid var(--col-1);
+    color: #fff;
+    margin-top: 20px;
+    font-family: var(--font-3);
+    font-size: 17px;"
+    >Buy Now</button>
+
+  </div>
+
+</div>
+
+
+<!-- <app-product-swiper></app-product-swiper>  Not use -->
+
+
+
+
+
+
+</section>
+
+
+
+
+
+

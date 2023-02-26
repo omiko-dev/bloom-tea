@@ -1,0 +1,55 @@
+
+section
+{
+  display: grid;
+  grid-template-rows: 500px 500px;
+}
+
+
+section .blog
+{
+  background-image: url(../../../../assets/home.blog.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+
+section .blog a
+{
+  color: #fff;
+  font-family: var(--font-1);
+  font-weight: 300;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.blog-text
+{
+  background-color: var(--col-1);
+  display: grid;
+  place-content: center;
+}
+
+.blog-text p
+{
+  color: #fff;
+  text-align: center;
+}
+
+.blog-text p:first-child
+{
+  font-size: 28px;
+  font-family: var(--font-1);
+  font-weight: 300;
+}
+
+
+.blog-text p:nth-child(2)
+{
+  font-size: 17px;
+  font-family: var(--font-2);
+  font-weight: 300;
+}

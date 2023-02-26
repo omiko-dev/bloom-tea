@@ -1,0 +1,34 @@
+
+
+section
+{
+  width: 100%;
+  height: 550px;
+  display: flex;
+}
+
+
+.bg
+{
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../assets/tea.bg.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+}
+
+h1
+{
+  color: #fff;
+  font-family: var(--font-1);
+  font-weight: 300;
+  font-size: 48px;
+  margin-top: 140px;
+}
+
+
+

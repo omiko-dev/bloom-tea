@@ -1,10 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MainExtrasComponent } from './main-content/main-extras/main-extras.component';
+import { MainHomeComponent } from './main-content/main-home/main-home.component';
+import { MainTeaComponent } from './main-content/main-tea/main-tea.component';
+import { NotFoundErrorComponent } from './error/not-found-error.component';
+import { MainAboutComponent } from './main-content/main-about/main-about.component';
+import { ProductPageComponent } from './main-content/product-page/product-page.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: 'Home', pathMatch: 'full' },
+
+  { path: 'Home', component: MainHomeComponent },
+
+  { path: 'Tea', component: MainTeaComponent },
+
+  { path: 'Extras', component: MainExtrasComponent },
+
+  { path: 'Product', component: ProductPageComponent },
+
+  { path: 'About', component: MainAboutComponent },
+
+  { path: '**', component: NotFoundErrorComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

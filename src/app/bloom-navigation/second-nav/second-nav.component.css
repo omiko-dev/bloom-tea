@@ -1,0 +1,100 @@
+
+section
+{
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(36 42 53 / 60%);
+  color: #fff;
+}
+
+.main
+{
+  display: grid;
+  grid-template-columns: 42.5% auto 42.5%;
+}
+
+
+
+ul
+{
+  list-style: none;
+  display: flex;
+  gap: 23px;
+  margin-block: .5em;
+}
+
+.pages ul
+{
+  margin-left: 23px;
+}
+
+li
+{
+  display: inline;
+}
+
+a
+{
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  transition: 0.4s ease;
+  color: #fff;
+}
+
+li:hover a
+{
+  color: rgb(214, 184, 110);
+}
+
+.bloom-tea
+{
+  display: grid;
+  place-content: center;
+  border-inline: 1px solid #fff;
+}
+
+h3
+{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+h3 a
+{
+  font-size: .5em;
+}
+
+
+
+
+
+
+.links
+{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+}
+
+.links ul
+{
+  margin-right: 58px;
+}
+
+
+.links i
+{
+  font-size: 24px;
+}
+
+.line
+{
+  margin-top: 5px;
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid #fff;
+  border-bottom: 3px solid #fff
+}

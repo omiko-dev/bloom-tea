@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { Tea } from './admin/tea.info';\
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bloom-Tea';
+
+  // public teaExport!: Tea[];
+
+
+
+  // userCardEvent($event: Tea[]) {
+  //   this.teaExport = $event;
+  //   console.log(this.teaExport);
+
+  // }
 }

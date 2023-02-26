@@ -1,0 +1,34 @@
+
+
+
+<section>
+
+<div class="filter">
+
+  <div class="in">
+    <h1>Filter by</h1>
+    <hr>
+
+    <button (click)="price()">Price  <span>{{ plus1 }}</span></button>
+
+    <ul class="Collection" [ngClass]="collStyle2 ? 'labels' : ''">
+      <li>
+        <input type="range" class="form-range" id="customRange1" min="2" max="20" [(ngModel)]="Price">
+      </li>
+      <li>{{ Price }}.00 $</li>
+    </ul>
+    <hr>
+  </div>
+
+
+  <div class="cards">
+    
+  </div>
+</div>
+</section>
+
+
+
+
+
+

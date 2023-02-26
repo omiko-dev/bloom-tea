@@ -1,0 +1,109 @@
+[
+    {
+      "type": "Classic",
+      "name": "Earl Grey",
+      "price": "6.00",
+      "size": "200",
+      "image": "https://static.wixstatic.com/media/f61af8_0fbe283e5f8f4cf193a7df53e4010342~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_0fbe283e5f8f4cf193a7df53e4010342~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_c3e94e49f4a94010b8f554c4fe1fdb20~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_c3e94e49f4a94010b8f554c4fe1fdb20~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_0fbe283e5f8f4cf193a7df53e4010342~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_0fbe283e5f8f4cf193a7df53e4010342~mv2_d_1776_1776_s_2.webp",
+      "discribe": "Earl Grey tea is a tea blend which has been flavoured with oil of bergamot. The rind's fragrant oil is added to black tea to give Earl Grey its unique taste.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Classic",
+      "name": "Lavender Blend",
+      "price": "7.00",
+      "size": "200",
+      "image": "https://static.wixstatic.com/media/f61af8_64019349aeba49cea38013601dcc1a69~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_64019349aeba49cea38013601dcc1a69~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_0c0fa57462784253bd875845f21a0b34~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_0c0fa57462784253bd875845f21a0b34~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_64019349aeba49cea38013601dcc1a69~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_64019349aeba49cea38013601dcc1a69~mv2_d_1776_1776_s_2.webp",
+      "discribe": "Lavender is a popular ingredient in many flavored tea blends, and imparts a soothing, floral note to any tea it’s added to. Lavender has also been used in herbal medicine for centuries thanks to its therapeutic relaxing properties.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Herbal Tea",
+      "name": "Hiriscus Flower",
+      "price": "7.00",
+      "size": "125",
+      "image": "https://static.wixstatic.com/media/f61af8_f1b4935e34bc45bbbc7c7e7f1d26e7ca~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_f1b4935e34bc45bbbc7c7e7f1d26e7ca~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_a6ba8d1aad4f4500aea89c65bbd77dd7~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_a6ba8d1aad4f4500aea89c65bbd77dd7~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_f1b4935e34bc45bbbc7c7e7f1d26e7ca~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_f1b4935e34bc45bbbc7c7e7f1d26e7ca~mv2_d_1776_1776_s_2.webp",
+      "discribe": "Hibiscus tea is a herbal tea made as an infusion from crimson or deep magenta-colored calyces (sepals) of the roselle (Hibiscus sabdariffa) flower. It is consumed both hot and cold. It has a tart, cranberry-like flavor.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Herbal Tea",
+      "name": "Chamomile Tea",
+      "price": "8.00",
+      "size": "125",
+      "image": "https://static.wixstatic.com/media/f61af8_cf15a1c505cf47d39071f0773d55babc~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_cf15a1c505cf47d39071f0773d55babc~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_9fed3890a0a94d60ab3d785bf152ac67~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_9fed3890a0a94d60ab3d785bf152ac67~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_cf15a1c505cf47d39071f0773d55babc~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_cf15a1c505cf47d39071f0773d55babc~mv2_d_1776_1776_s_2.webp",
+      "discribe": "Chamomile tea has long been used, as a traditional folk remedy, for a wide range of health issues. Nowadays, researchers are increasingly exploring its effectiveness in managing illnesses, including cancer and diabetes.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Herbal Tea",
+      "name": "Raspberry Leaves",
+      "price": "8.00",
+      "size": "125",
+      "image": "https://static.wixstatic.com/media/f61af8_c8640a46dfa04f29aa48d3ce483eb046~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_c8640a46dfa04f29aa48d3ce483eb046~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_56f1c3f992674f9994c1dd20cb0bce3b~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_56f1c3f992674f9994c1dd20cb0bce3b~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_c8640a46dfa04f29aa48d3ce483eb046~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_c8640a46dfa04f29aa48d3ce483eb046~mv2_d_1776_1776_s_2.webp",
+      "discribe": "Raspberry leaves are among the most pleasant tasting of all the herbal remedies, with a taste much like black tea, without the caffeine. Raspberries were said to have been discovered by the Olympian gods themselves while searching for berries on Mount Ida.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Herbal Tea",
+      "name": "Rosemary Specials",
+      "price": "5.00",
+      "size": "200",
+      "image": "https://static.wixstatic.com/media/f61af8_4cc4afe185164891bf60c5fda3eb8a97~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_4cc4afe185164891bf60c5fda3eb8a97~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_8df98f00b7644648b9a50983b443e97b~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_8df98f00b7644648b9a50983b443e97b~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_4cc4afe185164891bf60c5fda3eb8a97~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_4cc4afe185164891bf60c5fda3eb8a97~mv2_d_1776_1776_s_2.webp",
+      "discribe": "hey can be found in a variety of plant foods, such as fruits, vegetables, and herbs like rosemary. Rosemary tea also contains compounds that may have anti-inflammatory and antimicrobial properties.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Special Edition",
+      "name": "Rose Flowers",
+      "price": "13.00",
+      "size": "300",
+      "image": "https://static.wixstatic.com/media/f61af8_14aea8023fae4bd8b090bc880344d349~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_14aea8023fae4bd8b090bc880344d349~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_06c46587eb0b4fff9256189295aba334~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_06c46587eb0b4fff9256189295aba334~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_14aea8023fae4bd8b090bc880344d349~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_14aea8023fae4bd8b090bc880344d349~mv2_d_1776_1776_s_2.webp",
+      "discribe": "The rose family has over 130 species and thousands of cultivars. All roses are edible and can be used in tea, but some varieties are sweet while others are more bitter. Rose tea is an aromatic herbal beverage made from the fragrant petals and buds of rose flowers.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Special Edition",
+      "name": "Almond Spice",
+      "price": "15.00",
+      "size": "300",
+      "image": "https://static.wixstatic.com/media/f61af8_bb26277ce40a41d38762c2e9b0cd5b51~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_bb26277ce40a41d38762c2e9b0cd5b51~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_95ad2668331b491599e64c4af26da914~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_95ad2668331b491599e64c4af26da914~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_bb26277ce40a41d38762c2e9b0cd5b51~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_bb26277ce40a41d38762c2e9b0cd5b51~mv2_d_1776_1776_s_2.webp",
+      "discribe": "This toasty herbal tea combines sweet apple and flaked almonds with warming cinnamon. This caffeine-free tea brews a light pink colour as it infuses, and has hints of burnt caramel and toffee.",
+      "counter": "1"
+    },
+
+    {
+      "type": "Special Edition",
+      "name": "Mint & Melissa Mix",
+      "price": "15.00",
+      "size": "300",
+      "image": "https://static.wixstatic.com/media/f61af8_f574d51bfa15488abbc71107e213a339~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_f574d51bfa15488abbc71107e213a339~mv2_d_1776_1776_s_2.jpg",
+      "bg_image": "https://static.wixstatic.com/media/f61af8_d09cfe6707b44237a3b1e43a37dc7dae~mv2_d_1776_1776_s_2.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_d09cfe6707b44237a3b1e43a37dc7dae~mv2_d_1776_1776_s_2.jpg",
+      "shop_image": "https://static.wixstatic.com/media/f61af8_f574d51bfa15488abbc71107e213a339~mv2_d_1776_1776_s_2.jpg/v1/fill/w_580,h_420,al_c,q_85,usm_0.66_1.00_0.01/f61af8_f574d51bfa15488abbc71107e213a339~mv2_d_1776_1776_s_2.webp",
+      "discribe": "Special blend of green tea of the highest category and herbs. This green, refreshing infusion gives the feeling of being in touch with nature with its fresh aroma of mint, pleasant notes of lemon and benefits associated with Melissa.",
+      "counter": "1"
+    }
+]

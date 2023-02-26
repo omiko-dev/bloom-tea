@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+
+:root
+{
+  --font-1: 'EB Garamond', serif;
+  --font-2: 'Josefin Sans', sans-serif;
+  --font-3: 'Montserrat', sans-serif;
+  --col-1: #242A35;
+  --col-2: #9DACCA
+}
+
+
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+

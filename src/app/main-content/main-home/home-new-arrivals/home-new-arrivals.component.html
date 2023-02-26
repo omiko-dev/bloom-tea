@@ -1,0 +1,40 @@
+
+
+<section>
+
+
+    <header>
+      <h1>New Arrivals</h1>
+      <p>I'm a paragraph. Click here to add your own text and edit me. Let</p>
+      <p>your users get to know you.</p>
+    </header>
+
+
+  <div class="cards">
+    <ng-container  *ngFor="let el of arr; let i = index">
+      <div
+      *ngIf="i < 4"
+      routerLink="/Product"
+      [queryParams]="el"
+      class="box">
+        <img [src]="el.image" alt="" srcset="" style="width: 500px;">
+
+        <h3 class="tea" style="font-size: 25px; margin-top: 25px;" >{{el.name}}</h3>
+
+        <h3 class="price" style="font-size: 19px; font-weight: 400;" >${{el.price}}</h3>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="btn">
+    <button routerLink="/Tea">Shop All</button>
+  </div>
+
+</section>
+
+
+
+
+
+
+

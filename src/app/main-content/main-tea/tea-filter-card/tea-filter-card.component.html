@@ -1,0 +1,125 @@
+
+
+
+
+<section>
+
+  <div class="filter">
+
+    <div class="in">
+      <h1>Filter by</h1>
+      <hr>
+
+      <button (click)="Collection()">Collection</button>
+      <ul class="Collection" [ngClass]="collStyle ? 'labels' : ''">
+        <li>
+          <label for="All" >
+            <input type="radio" name="name" id="All" value="">
+            All
+          </label>
+        </li>
+        <li>
+          <label for="Classic">
+            <input type="radio" name="name" id="Classic" value="Classic" #coll>
+            Classic
+          </label>
+        </li>
+        <li>
+          <label for="Herbal">
+            <input type="radio" name="name" id="Herbal" value="Herbal Tea" #coll>
+            Herbal Tea
+          </label>
+        </li>
+        <li>
+          <label for="Special">
+            <input type="radio" name="name" id="Special" value="Special Edition" #coll>
+            Special Edition
+          </label>
+        </li>
+      </ul>
+
+<hr>
+
+      <button (click)="price()">Price</button>
+      <ul class="Collection" [ngClass]="collStyle2 ? '' : 'labels'">
+        <li>
+          <input type="range" class="form-range" id="customRange1" min="5" max="15" [(ngModel)]="len">
+        </li>
+        <li>{{ len }}.00 $</li>
+      </ul>
+
+<hr>
+
+    <button (click)="Size()">Size</button>
+    <ul [ngClass]="collStyle3 ? '' : 'labels'">
+      <li>
+        <label for="Size" class="size">
+          <input type="checkbox" name="Size" id="Size" value="125" >
+        125 Gr</label>
+      </li>
+
+      <li>
+        <label for="Size2" class="size">
+          <input type="checkbox" name="Size" id="Size2" value="200" >
+          200 Gr</label>
+      </li>
+
+      <li>
+        <label for="Size3" class="size">
+          <input type="checkbox" name="Size" id="Size3" value="300" >
+          300 Gr</label>
+      </li>
+    </ul>
+<hr>
+</div>
+  </div>
+
+
+
+<div
+style="
+display: flex;
+flex-wrap: wrap;
+justify-content: start;
+margin-top: 20px;
+margin-left: 100px;
+gap: 50px;">
+
+  <ng-container *ngFor="let el of tea; let i = index">
+      <div
+      class="cards" routerLink="/Product"
+      [queryParams]="el"
+      *ngIf="el.price >= len || el.type == type || el.size == size">
+
+        <div class="div"
+        style="cursor:pointer">
+
+          <div class="img">
+            <img [src]="el.image" alt="" class="img1">
+            <img [src]="el.bg_image" alt="" class="img2">
+            <div
+            style="position: absolute; top: 0; left: 0; background-color: var(--col-1); color: #fff; font-size: 15px; padding: 3px; margin: 2pxv "
+            *ngIf="el.type == 'Special Edition'">Special edition</div>
+          </div>
+
+          <h2>{{ el.name }}</h2>
+          <h3>$ {{ el.price }}</h3>
+
+        </div>
+
+        <button>Add to art</button>
+
+    </div>
+  </ng-container>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+

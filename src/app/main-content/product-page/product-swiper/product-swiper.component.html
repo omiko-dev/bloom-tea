@@ -1,0 +1,15 @@
+<div class="content-section implementation carousel-demo">
+  <div class="card">
+    <p-carousel  [value]="Teadata" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true"
+    [autoplayInterval]="0" [responsiveOptions]="responsiveOptions">
+    <ng-template let-image pTemplate="item"  *ngFor="let el of Teadata; let i = index">
+      <div class="item card" >
+          <img [src]="el.image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a routerLink="/Product" [queryParams]="el" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>
