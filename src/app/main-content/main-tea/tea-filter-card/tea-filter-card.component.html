@@ -14,25 +14,25 @@
       <ul class="Collection" [ngClass]="collStyle ? 'labels' : ''">
         <li>
           <label for="All" >
-            <input type="radio" name="name" id="All" value="">
+            <input type="radio" name="name" id="All" value="" checked (change)="typeFillter($event)">
             All
           </label>
         </li>
         <li>
           <label for="Classic">
-            <input type="radio" name="name" id="Classic" value="Classic" #coll>
+            <input type="radio" name="name" id="Classic" value="Classic"  (change)="typeFillter($event)">
             Classic
           </label>
         </li>
         <li>
           <label for="Herbal">
-            <input type="radio" name="name" id="Herbal" value="Herbal Tea" #coll>
+            <input type="radio" name="name" id="Herbal" value="Herbal Tea" (change)="typeFillter($event)">
             Herbal Tea
           </label>
         </li>
         <li>
           <label for="Special">
-            <input type="radio" name="name" id="Special" value="Special Edition" #coll>
+            <input type="radio" name="name" id="Special" value="Special Edition" (change)="typeFillter($event)">
             Special Edition
           </label>
         </li>
@@ -54,19 +54,19 @@
     <ul [ngClass]="collStyle3 ? '' : 'labels'">
       <li>
         <label for="Size" class="size">
-          <input type="checkbox" name="Size" id="Size" value="125" >
+          <input type="checkbox" name="Size" id="Size" value="125" checked (change)="sizeFillter($event)">
         125 Gr</label>
       </li>
 
       <li>
         <label for="Size2" class="size">
-          <input type="checkbox" name="Size" id="Size2" value="200" >
+          <input type="checkbox" name="Size" id="Size2" value="200" checked (change)="sizeFillter($event)">
           200 Gr</label>
       </li>
 
       <li>
         <label for="Size3" class="size">
-          <input type="checkbox" name="Size" id="Size3" value="300" >
+          <input type="checkbox" name="Size" id="Size3" value="300" checked (change)="sizeFillter($event)">
           300 Gr</label>
       </li>
     </ul>
@@ -80,16 +80,16 @@
 style="
 display: flex;
 flex-wrap: wrap;
-justify-content: start;
+justify-content: space-evenly;
 margin-top: 20px;
-margin-left: 100px;
 gap: 50px;">
 
   <ng-container *ngFor="let el of tea; let i = index">
+
       <div
       class="cards" routerLink="/Product"
       [queryParams]="el"
-      *ngIf="el.price >= len || el.type == type || el.size == size">
+      *ngIf="sizeFillterIn(i) && el.price >= len && typeFillterIn(i)">
 
         <div class="div"
         style="cursor:pointer">

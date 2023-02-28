@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, ContentChildren, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LocalService } from 'src/app/service/local.service';
 
 
@@ -8,24 +8,15 @@ import { LocalService } from 'src/app/service/local.service';
   templateUrl: './tea-filter-card.component.html',
   styleUrls: ['./tea-filter-card.component.css'],
 })
-export class TeaFilterCardComponent implements OnInit, AfterContentInit {
+export class TeaFilterCardComponent implements OnInit {
   public type: any;
 
-  constructor(private TeaApi: LocalService) {
-    console.log(this.filter());
-  }
+  constructor(private TeaApi: LocalService) {  }
 
   public image: any;
 
   public size!: any;
 
-  hoverOn() {
-    console.log('wow');
-  }
-
-  hoverOff() {
-    console.log('nooooo');
-  }
 
   public tea: any;
 
@@ -33,26 +24,10 @@ export class TeaFilterCardComponent implements OnInit, AfterContentInit {
     this.tea = this.TeaApi.GetTeaApi();
   }
 
-  // public content!: [];
-  @ViewChildren('coll')
-  coll!: QueryList<any>
-
-  ngAfterContentInit(){
-
-
-    console.log(this.coll);
-    console.log(0.8);
-
-
-  }
-
   public collStyle!: boolean;
   public collStyle2!: boolean;
   public collStyle3!: boolean;
   public num: number = -1;
-  filter() {
-    // console.log(this.child);
-  }
 
   Collection() {
     this.num += 1;
@@ -84,4 +59,50 @@ export class TeaFilterCardComponent implements OnInit, AfterContentInit {
       this.collStyle3 = false;
     }
   }
+
+  public typeArr: any = ['Classic', 'Herbal Tea', 'Special Edition'];
+  typeFillter(event: Event) {
+    const nativeElement = event.target as HTMLInputElement;
+    if (nativeElement.checked && nativeElement.value === '') {
+      this.typeArr = ['Classic', 'Herbal Tea', 'Special Edition'];
+      console.log(this.typeArr);
+    } else {
+      this.typeArr = [nativeElement.value];
+      console.log(this.typeArr);
+    }
+  }
+
+  typeFillterIn(i: number) {
+    return this.typeArr.includes(this.tea[i].type);
+  }
+
+
+
+  public teater: any = ['125', '200', '300'];
+
+  sizeFillter(event: Event) {
+    const nativeElement = event.target as HTMLInputElement;
+    if (nativeElement.checked) {
+      this.teater.push(nativeElement.value);
+      console.log(this.teater);
+
+      console.log(this.teater.includes(this.tea[2].size));
+    } else {
+      this.teater.splice(this.teater.indexOf(nativeElement.value), 1);
+      console.log(this.teater.includes(this.tea[2].size));
+    }
+  }
+
+  sizeFillterIn(i: number) {
+    return this.teater.includes(this.tea[i].size);
+  }
+
+
+  noMore(){
+    if(true){
+      console.log('yes');
+    }
+      console.log('noooooo');
+  }
+
 }

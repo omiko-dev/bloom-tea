@@ -13,6 +13,11 @@
   --col-2: #9DACCA
 }
 
+*
+{
+  margin: 0;
+  padding: 0;
+}
 
 
 html

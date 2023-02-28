@@ -25,7 +25,7 @@ section
 
 .list h1
 {
-  font-size: 36px;
+  font-size: 30px;
   font-family: var(--font-1)
 }
 
@@ -49,6 +49,7 @@ ul li a
   color: #000;
   font-family: var(--font-2);
   font-weight: 300;
+  font-size: 16px;
 }
 
 .list a
@@ -56,6 +57,7 @@ ul li a
   color: #000;
   font-family: var(--font-2);
   font-weight: 300;
+  font-size: 16px;
 }
 
 .list p
@@ -87,6 +89,7 @@ ul li a
   font-weight: 300;
   position: relative;
   margin-bottom: 10px;
+  font-size: 28px;
 }
 
 .help h3::before,
@@ -116,7 +119,7 @@ ul li a
   justify-content: flex-start;
 }
 
-.email input
+.input input
 {
   border: 1px solid #000;
   outline: none;
@@ -124,15 +127,17 @@ ul li a
   width: 370px;
   padding-left: 19px;
   margin-right: 10px;
+  font-size: 14px;
 }
 
 .email button
 {
   display: inline;
-  height: 49px;
+  height: 45px;
   background-color: var(--col-1);
   border: none;
   transition: .4s ease-in-out;
+  padding-inline: 10px;
 
 }
 
