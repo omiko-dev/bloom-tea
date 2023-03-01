@@ -6,6 +6,7 @@ import { MainTeaComponent } from './main-content/main-tea/main-tea.component';
 import { NotFoundErrorComponent } from './error/not-found-error.component';
 import { MainAboutComponent } from './main-content/main-about/main-about.component';
 import { ProductPageComponent } from './main-content/product-page/product-page.component';
+import { MainBlogComponent } from './main-content/main-blog/main-blog.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'Home', pathMatch: 'full' },
@@ -17,6 +18,8 @@ const routes: Routes = [
   { path: 'Extras', component: MainExtrasComponent },
 
   { path: 'Product', component: ProductPageComponent },
+
+  { path: 'Blog', component: MainBlogComponent },
 
   { path: 'About', component: MainAboutComponent },
 

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import data from '../Json/Tea.json'
-import dataTwo from '../Json/Extras.json';
+import TeaData from '../Json/Tea.json'
+import ExtrasData from '../Json/Extras.json';
+import BlogData from '../Json/Blog.json';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class LocalService {
   public cartInfo: any = [];
 
   GetTeaApi() {
-    return data
+    return TeaData;
   }
 
   getCartInfo(el: any) {
@@ -26,7 +27,11 @@ export class LocalService {
 
 
   GetExtrasApi() {
-    return dataTwo
+    return ExtrasData;
+  }
+
+  GetBlogApi(){
+    return BlogData;
   }
 
 

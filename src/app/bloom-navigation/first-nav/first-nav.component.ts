@@ -8,26 +8,17 @@ import { LocalService } from 'src/app/service/local.service';
 })
 export class FirstNavComponent implements OnInit {
   public cartArr: any = [];
-  public cartLenght!: number;
 
-  constructor(private cartInfo: LocalService) {this.test();
-  }
+  constructor(private cartInfo: LocalService) {}
 
   ngOnInit() {
     this.cartArr = this.cartInfo.getCart();
-
-
-    console.log('o');
-
   }
 
   public divStyle: string = '';
 
   public num: number = 0;
 
-  list() {
-    this.num += 1;
-  }
 
   cart!: boolean;
 
@@ -41,10 +32,5 @@ export class FirstNavComponent implements OnInit {
   remove(el: any, i: number) {
     this.cartArr.splice(i, 1);
   }
-
-  test() {
-    this.cartLenght = this.cartArr.length;
-  }
-
 
 }

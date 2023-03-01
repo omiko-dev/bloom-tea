@@ -79,7 +79,7 @@ input
 }
 
 .person_icon:hover ~ span,
-.market span:hover
+.market span:first-child:hover
 {
   color: #ffffff57;
 }

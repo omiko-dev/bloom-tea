@@ -27,6 +27,9 @@ import { ProductPageComponent } from './main-content/product-page/product-page.c
 import { ProductPageFirstComponent } from './main-content/product-page/product-page-first/product-page-first.component';
 import { AccordionModule } from 'primeng/accordion';
 import { CarouselModule } from 'primeng/carousel';
+import { MainBlogComponent } from './main-content/main-blog/main-blog.component';
+import { BlogFirstComponent } from './main-content/main-blog/blog-first/blog-first.component';
+import { BlogCardsComponent } from './main-content/main-blog/blog-cards/blog-cards.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,9 @@ import { CarouselModule } from 'primeng/carousel';
     AboutInfoComponent,
     ProductPageComponent,
     ProductPageFirstComponent,
+    MainBlogComponent,
+    BlogFirstComponent,
+    BlogCardsComponent,
   ],
   imports: [
     BrowserModule,
