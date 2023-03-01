@@ -22,9 +22,45 @@
 
 
   <div class="cards">
-    
+
   </div>
 </div>
+
+
+
+<div style="
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin-top: 20px;
+gap: 50px;">
+
+  <ng-container *ngFor="let el of data; let i = index">
+
+    <div class="cards" routerLink="/Product" [queryParams]="el"
+      *ngIf="el.price >= Price">
+
+      <div class="div" style="cursor:pointer">
+
+        <div class="img">
+          <img [src]="el.image" alt="" class="img1">
+        </div>
+
+        <h2>{{ el.name }}</h2>
+        <h3>$ {{ el.price }}</h3>
+
+      </div>
+
+      <button>Add to art</button>
+
+    </div>
+  </ng-container>
+
+
+
+</div>
+
+
 </section>
 
 

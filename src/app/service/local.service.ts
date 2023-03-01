@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import data from '../Json/Tea.json'
+import dataTwo from '../Json/Extras.json';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,11 @@ export class LocalService {
 
   getCart() {
     return this.cartInfo;
+  }
+
+
+  GetExtrasApi() {
+    return dataTwo
   }
 
 

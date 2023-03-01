@@ -27,7 +27,6 @@ import { ProductPageComponent } from './main-content/product-page/product-page.c
 import { ProductPageFirstComponent } from './main-content/product-page/product-page-first/product-page-first.component';
 import { AccordionModule } from 'primeng/accordion';
 import { CarouselModule } from 'primeng/carousel';
-import { ProductSwiperComponent } from './main-content/product-page/product-swiper/product-swiper.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +52,6 @@ import { ProductSwiperComponent } from './main-content/product-page/product-swip
     AboutInfoComponent,
     ProductPageComponent,
     ProductPageFirstComponent,
-    ProductSwiperComponent,
   ],
   imports: [
     BrowserModule,
