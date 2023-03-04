@@ -3,7 +3,7 @@ section
   width: 100%;
   background-color: rgb(36 42 53 / 60%);
   border-bottom: 1px solid #fff;
-  font-family: 'Josefin Sans', sans-serif;
+  position:relative;
 }
 
 .main
@@ -166,4 +166,44 @@ svg
 .bi-x-circle:hover
 {
   color: #414141;
+}
+
+.cost
+{
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cost h3
+{
+  font-family: var(--font-1);
+  font-weight: 300;
+  margin-right: 140px;
+}
+
+hr
+{
+  height: 2px;
+  width: 100%;
+}
+
+.cost button
+{
+  width: 70%;
+  height: 41px;
+  background-color: var(--col-1);
+  color: #fff;
+  font-family: var(--font-3);
+  font-size: 20px;
+  transition: .5s ease;
+}
+
+.cost button:hover
+{
+  background-color: #fff;
+  color: var(--col-1);
 }

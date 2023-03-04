@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "bool-tea"
+  },
+  "targets": {
+    "bool-tea": {
+      "hosting": {
+        "Bloom-Tea": [
+          "bool-tea"
+        ]
+      }
+    }
+  }
+}

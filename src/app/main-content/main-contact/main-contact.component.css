@@ -1,0 +1,135 @@
+
+
+section
+{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.title
+{
+  font-family: var(--font-1);
+  font-weight: 300;
+  margin-block: 110px 50px;
+  position: relative;
+}
+
+.title::before
+{
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  background-color: #000;
+  left: -350px;
+  top: 26px;
+}
+
+.title::after
+{
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  background-color: #000;
+  left: 399px;
+  top: 26px;
+}
+
+.main
+{
+  width: 53%;
+  height: 500px;
+}
+
+.left
+{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left h5,
+.right h5
+{
+  font-family: var(--font-1);
+  font-weight: 300;
+}
+
+.left p
+{
+  font-family: var(--font-2);
+  font-weight: 300;
+  font-size: 17px;
+  color: var(--col-1);
+  margin-bottom: 50px;
+}
+
+.right p
+{
+  font-family: var(--font-2);
+  font-weight: 300;
+  font-size: 17px;
+  color: var(--col-1);
+}
+
+
+.left .input
+{
+  margin-bottom: 10px;
+}
+
+.left .input input
+{
+  width: 228px;
+  height: 35px;
+  border: 1px solid;
+  padding: 3px 3px 3px 12px;
+  outline: none;
+  font-size: 16px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+
+input:hover,
+input:focus
+{
+  box-shadow: 0 0 0 2px;
+}
+
+
+.left input
+{
+  outline: none;
+  width: 477px;
+  height: 33.2px;
+  border: 1px solid;
+  font-size: 16px;
+  padding: 12.7px 85px 12px 10px;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
+}
+
+.left button
+{
+  width: 477px;
+  height: 35px;
+  background-color: var(--col-1);
+  color: #fff;
+  font-size: 18px;
+  font-family: var(--font-2);
+  font-weight: 300;
+  border: none;
+  transition: .5s ease;
+}
+
+.left button:hover
+{
+  background-color: var(--col-2);
+}

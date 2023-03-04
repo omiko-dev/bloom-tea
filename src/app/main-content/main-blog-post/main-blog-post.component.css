@@ -1,0 +1,136 @@
+
+
+
+section
+{
+  width: 100%;
+  height: 200vh;
+  background-image: url(../../../assets/post2.bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  place-content: center;
+}
+
+
+.main
+{
+  width: 65pc;
+  height: fit-content;
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+
+.allPost
+{
+  position: absolute;
+  left: 2pc;
+  top: 3pc;
+  font-family: var(--font-2);
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.bi-search
+{
+  position: absolute;
+  right: 2pc;
+  top: 3pc;
+}
+
+
+.post
+{
+  height: fit-content;
+  width: 61pc;
+  border: 1px solid var(--col-2);
+  align-items: center;
+  flex-direction: column;
+  margin-block: 100px 64px;
+}
+
+.person
+{
+  position: relative;
+  align-items: center;
+  height: 92px;
+  width: 49pc;
+}
+
+.person p
+{
+  margin: 0;
+  font-size: 14px;
+  font-family: var(--font-2);
+  font-weight: 300;
+}
+
+.post h1
+{
+  width: 49pc;
+  font-family: var(--font-1);
+  font-weight: 300;
+}
+
+.post img
+{
+  margin-top: 10px;
+  width: 49pc;
+}
+
+
+.post .content
+{
+  width: 49pc;
+  font-size: 20px;
+  font-family: var(--font-2);
+  font-weight: 300;
+  line-height: 10px;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
+
+hr
+{
+  width: 49pc;
+  color: var(--col-1);
+}
+
+.icons
+{
+  width: 48pc;
+  justify-content: start;
+  gap: 35px;
+
+}
+
+i
+{
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.bi-facebook:hover
+{
+  color: rgb(95, 95, 249);
+}
+
+.bi-twitter:hover
+{
+    color: rgb(95, 95, 249);
+}
+
+.bi-linkedin:hover
+{
+    color: rgb(95, 95, 249);
+}
+
+.bi-link-45deg:hover
+{
+    color: rgb(95, 95, 249);
+}

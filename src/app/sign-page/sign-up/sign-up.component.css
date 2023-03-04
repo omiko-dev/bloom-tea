@@ -1,0 +1,38 @@
+section {
+  width: 28pc;
+  margin-top: 46px;
+  position: relative;
+}
+
+.main {
+  flex-direction: column;
+}
+
+input {
+  outline: none;
+  height: 40px;
+  font-size: 18px;
+  font-family: var(--font-3);
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+
+button {
+  width: 166px;
+  height: 40px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 18px;
+  border: none;
+  transition: .5s;
+  position: absolute;
+  right: 5%;
+  bottom: -63px;
+}
+
+button:hover {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid;
+}

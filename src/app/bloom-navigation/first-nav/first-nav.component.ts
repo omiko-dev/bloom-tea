@@ -9,10 +9,13 @@ import { LocalService } from 'src/app/service/local.service';
 export class FirstNavComponent implements OnInit {
   public cartArr: any = [];
 
+  public fullPrice: number = 0
+
   constructor(private cartInfo: LocalService) {}
 
   ngOnInit() {
     this.cartArr = this.cartInfo.getCart();
+        this.loop(this.cartArr);
   }
 
   public divStyle: string = '';
@@ -24,13 +27,31 @@ export class FirstNavComponent implements OnInit {
 
   close() {
     this.cart = true;
+    this.loop(this.cartArr);
   }
   open() {
     this.cart = false;
+    this.loop(this.cartArr);
+
   }
 
   remove(el: any, i: number) {
     this.cartArr.splice(i, 1);
+    this.loop(this.cartArr);
   }
+
+  loop(arr: any) {
+    this.fullPrice = 0;
+    for (let i = 0; i < arr.length; i++){
+      this.fullPrice += Number(arr[i].price);
+    }
+
+    if (arr.length < 1) {
+      this.fullPrice = 0;
+    }
+
+  }
+
+
 
 }

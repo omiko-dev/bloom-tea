@@ -30,6 +30,31 @@ import { CarouselModule } from 'primeng/carousel';
 import { MainBlogComponent } from './main-content/main-blog/main-blog.component';
 import { BlogFirstComponent } from './main-content/main-blog/blog-first/blog-first.component';
 import { BlogCardsComponent } from './main-content/main-blog/blog-cards/blog-cards.component';
+import { MainBlogPostComponent } from './main-content/main-blog-post/main-blog-post.component';
+import { MainContactComponent } from './main-content/main-contact/main-contact.component';
+import { ContactFirstComponent } from './main-content/main-contact/contact-first/contact-first.component';
+import { AgmCoreModule } from '@agm/core';
+import { AgmDirectionModule } from 'agm-direction';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import {
+  provideAnalytics,
+  getAnalytics,
+  ScreenTrackingService,
+  UserTrackingService,
+} from '@angular/fire/analytics';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import {
+  provideRemoteConfig,
+  getRemoteConfig,
+} from '@angular/fire/remote-config';
+import { SignPageComponent } from './sign-page/sign-page.component';
+import { SignInComponent } from './sign-page/sign-in/sign-in.component';
+import { SignUpComponent } from './sign-page/sign-up/sign-up.component';
+import { ContactMapComponent } from './main-content/main-contact/contact-map/contact-map.component';
+import { MainBuyComponent } from './main-content/main-buy/main-buy.component';
+import { BuyFirstComponent } from './main-content/main-buy/buy-first/buy-first.component';
 
 @NgModule({
   declarations: [
@@ -58,15 +83,34 @@ import { BlogCardsComponent } from './main-content/main-blog/blog-cards/blog-car
     MainBlogComponent,
     BlogFirstComponent,
     BlogCardsComponent,
+    MainBlogPostComponent,
+    MainContactComponent,
+    ContactFirstComponent,
+    SignPageComponent,
+    SignInComponent,
+    SignUpComponent,
+    ContactMapComponent,
+    MainBuyComponent,
+    BuyFirstComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AgmCoreModule,
     FormsModule,
     AccordionModule,
     CarouselModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB9ncLr0ygiIDjCgr-6t4OGndwri3I-H3I',
+    }),
+    AgmDirectionModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideRemoteConfig(() => getRemoteConfig()),
   ],
-  providers: [],
+  providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
