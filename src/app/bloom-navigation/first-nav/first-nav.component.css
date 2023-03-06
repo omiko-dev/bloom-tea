@@ -16,6 +16,7 @@ section
 
 .search
 {
+  position: relative;
   width: 200px;
   height: 40px;
   display: flex;
@@ -43,6 +44,43 @@ section
   font-size: 14px;
   color: #fff;
 }
+
+.searchBox
+{
+  position: absolute;
+  display: none;
+  bottom: -200px;
+  width: 200px;
+  height: 200px;
+  background-color: #414141;
+  overflow-y: scroll;
+}
+
+.margin10
+{
+  margin-block: 10px;
+}
+
+input:is(:focus) ~ .searchBox
+{
+  display: block;
+}
+
+
+
+.searchBox::-webkit-scrollbar
+{
+  width: 0;
+}
+
+.img
+{
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  margin-left: 8%;
+}
+
 
 input
 {
@@ -207,3 +245,14 @@ hr
   background-color: #fff;
   color: var(--col-1);
 }
+
+
+
+.in_list::-webkit-scrollbar
+{
+  width: 0;
+}
+
+
+
+

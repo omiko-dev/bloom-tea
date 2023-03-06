@@ -1,7 +1,7 @@
-<app-bloom-navigation></app-bloom-navigation>
+<app-bloom-navigation  (activate)="onActivate()"></app-bloom-navigation>
 
 
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate()"></router-outlet>
 
 <app-bloom-footer></app-bloom-footer>
 

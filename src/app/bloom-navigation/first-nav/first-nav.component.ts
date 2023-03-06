@@ -11,11 +11,16 @@ export class FirstNavComponent implements OnInit {
 
   public fullPrice: number = 0
 
+  TeaSearch: any;
+
   constructor(private cartInfo: LocalService) {}
 
   ngOnInit() {
     this.cartArr = this.cartInfo.getCart();
-        this.loop(this.cartArr);
+    this.loop(this.cartArr);
+
+    this.TeaSearch = this.cartInfo.GetFullData(); //! full data
+
   }
 
   public divStyle: string = '';
@@ -32,6 +37,7 @@ export class FirstNavComponent implements OnInit {
   open() {
     this.cart = false;
     this.loop(this.cartArr);
+
 
   }
 
@@ -53,5 +59,31 @@ export class FirstNavComponent implements OnInit {
   }
 
 
+  search(el:string, text:string):any {
+
+    const newText = text.split('');
+    const newEl = el.split('')
+    let num = 0;
+
+    for (let i = 0; i < newText.length; i++){
+      if (newEl.includes(newText[i])) {
+        num++;
+      }
+    }
+
+    if (num > 1) {
+      return true
+    }
+
+  }
 
 }
+
+
+
+
+
+
+
+
+

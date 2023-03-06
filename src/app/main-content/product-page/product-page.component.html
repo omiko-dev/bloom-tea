@@ -56,7 +56,10 @@
     font-size: 17px;"
     >Add to Cart</button>
 
-    <button style="width: 306px;
+    <button
+    (click)="cartAdder()"
+    routerLink="/Buy"
+    style="width: 306px;
     height: 43.5px;
     padding: 8px 16px;
     display: grid;

@@ -17,6 +17,7 @@ export class MainBlogPostComponent implements OnInit{
 
     console.log(this.cardArr);
 
+    window.scroll(0, 243);
   }
 
 }

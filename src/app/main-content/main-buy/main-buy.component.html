@@ -7,44 +7,81 @@
 
   <div class="main">
 
+
     <div class="list">
       <h5>My cart</h5>
 
       <hr>
+      <ng-container *ngFor="let el of buyItemsArr; let i = index">
+
 
       <div class="cards">
-        <div class="img"></div>
+        <div class="img"><img [src]="el.image" alt="image" style="width: 100%; height: 100%;"></div>
 
         <div class="describe">
-          <h6>Tea Name</h6>
+          <h6>{{ el.name }}</h6>
 
 
-          <p>8.00$</p>
-          <p style="color: var(--col-2);">size: 125Gr</p>
+          <p>{{el.price }}$</p>
+          <p style="color: var(--col-2);">size: {{ el.size }}Gr</p>
         </div>
 
         <br>
 
         <div class="quantity">
-          <span style="top: -0.3000000000000007px; left: -15px; width: 7px;">-</span>
+          <span style="    top: -13px; left: 8px; width: 7px; position: absolute; font-size: 32px; cursor: pointer;" (click)="minus(i)">-</span>
 
-          <span style="left: 2px; font-family: var(--font-3);">0</span>
+          <span style="left: 2px; font-family: var(--font-3);">{{testArr[i]}}</span>
 
-          <span style="top: -1.5px; right: -17px;">+</span>
+          <span style="top: -3px; right: 6px; position: absolute; cursor: pointer;" (click)="plus(i)">+</span>
         </div>
 
         <div class="full-card-price" >
-          <h6>$24.00</h6>
+          <h6>${{ el.price }}</h6>
         </div>
 
-        <i class="bi bi-x-lg"></i>
+        <i class="bi bi-x-lg" style="cursor: pointer" (click)="remove(i)"></i>
 
       </div>
       <hr>
-    </div>
 
-    <div class="buy">
 
+    </ng-container>
+
+
+    <h6 style="color: #687fad; font-size: 17px; font-weight: 300;"><i class="bi bi-tag"></i> Enter a promo code</h6>
+
+    <h6 style="color: #687fad; font-size: 17px; font-weight: 300;"><i class="bi bi-card-text"></i> Add a note</h6>
+  </div>
+
+
+
+    <div class="buy" style="margin-left: 25px;">
+      <h5 style="padding-bottom: 9px;">Order summary</h5>
+
+      <hr>
+
+      <div class="up_price">
+        <p>Subtotal</p>
+
+        <p>{{ price }}.00$</p>
+      </div>
+
+      <a href="#">Estimate Shipping</a>
+
+      <hr style="margin-block: 5px 10px;">
+
+      <div class="Price d-flex">
+        <p>Total</p>
+
+        <p>{{ price }}.00$</p>
+      </div>
+
+      <button>Checkout</button>
+
+      <div style="width: 100%; text-align: center; font-size: 14px; margin-top: 5px;">
+        <p><i class="bi bi-lock-fill"></i>Secure Checkout</p>
+      </div>
     </div>
 
   </div>

@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BloomNavigationComponent } from './bloom-navigation/bloom-navigation.component';
 import { FirstNavComponent } from './bloom-navigation/first-nav/first-nav.component';
 import { SecondNavComponent } from './bloom-navigation/second-nav/second-nav.component';
-import { SearchListComponent } from './bloom-navigation/first-nav/search-list/search-list.component';
 import { MainHomeComponent } from './main-content/main-home/main-home.component';
 import { HomeFirstComponent } from './main-content/main-home/home-first/home-first.component';
 import { HomeNewArrivalsComponent } from './main-content/main-home/home-new-arrivals/home-new-arrivals.component';
@@ -62,7 +61,6 @@ import { BuyFirstComponent } from './main-content/main-buy/buy-first/buy-first.c
     BloomNavigationComponent,
     FirstNavComponent,
     SecondNavComponent,
-    SearchListComponent,
     MainHomeComponent,
     HomeFirstComponent,
     HomeNewArrivalsComponent,
