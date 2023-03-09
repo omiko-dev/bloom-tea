@@ -15,6 +15,7 @@ div
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   display: grid;
   place-content: center;
 }
@@ -25,4 +26,14 @@ h1
   font-family: var(--font-1);
   font-weight: 300;
   margin-top: 30px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  section 
+  {
+    height: 400px;
+  }
+
 }

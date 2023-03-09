@@ -4,7 +4,8 @@
   <div class="main">
 
     <div class="pages">
-      <ul>
+      <i class="bi bi-list" (click)="animation()"></i>
+      <ul [ngStyle]="listCss ? {'animation': 'list .3s ', 'transform':'rotateX(0deg)', 'top':'111px', 'transition':'.3s ease'} : {'':''} " class="ul">
         <li><a routerLink="/Tea">Teas</a></li>
         <li><a routerLink="/Extras">Extras</a></li>
         <li><a routerLink="/About">About</a></li>

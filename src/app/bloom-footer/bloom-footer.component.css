@@ -54,7 +54,7 @@ ul li a
 
 .list a
 {
-  color: #000;
+  color: #000000;
   font-family: var(--font-2);
   font-weight: 300;
   font-size: 16px;
@@ -173,5 +173,93 @@ ul li a
   font-family: var(--font-2);
   color: #000;
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+  .top-footer
+  {
+    grid-template-areas:
+    'list list'
+    'help follow'
+    'email email';
+  }
+
+}
+
+
+@media screen and (max-width: 767px){
+  .top-footer
+  {
+    grid-template-areas:
+    'list list'
+      'help help'
+      'follow follow'
+      'email email';
+  }
+
+  .email .input
+  {
+    width: 79%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .input input
+  {
+    width: 100%;
+  }
+
+  .input button
+  {
+    width: 60%;
+  }
+
+  .input button a
+  {
+  font-size: 12px;
+  }
+
+
+  .down-footer
+  {
+    flex-direction: column;
+  }
+
+  .down-footer p
+  {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .list h1
+  {
+    font-size: 25px;
+  }
+
+  .list a
+  {
+    font-size: 14px;
+  }
+
+  ul li a
+  {
+    font-size: 14px;
+  }
+
+  .help h3,
+  .follow h3
+  {
+    font-size: 23px;
+  }
+}
+
+
 
 

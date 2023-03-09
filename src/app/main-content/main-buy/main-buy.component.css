@@ -56,6 +56,11 @@ section
   margin-left: 15px;
 }
 
+.buy
+{
+  margin-left: 30px;
+}
+
 .list .describe h6
 {
   font-size: 16px;
@@ -162,3 +167,73 @@ span
 {
   background-color: var(--col-2);
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .main
+  {
+    grid-template-columns: none;
+    grid-template-rows: 50% 50%;
+    width: 38pc;
+    place-content: normal;
+  }
+
+  .main .buy
+  {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .list
+  {
+    height: 105%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  section 
+  {
+    place-content: flex-start;
+  }
+  
+  .main 
+  {
+    grid-template-columns: none;
+    grid-template-rows: 65% 35%;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .main .list 
+  {
+    margin-top: 20px;
+  }
+
+  .main .buy 
+  {
+    margin-left: 0;
+    width: 20pc;
+  }
+
+  .quantity
+  {
+    right: 24px;
+    margin-bottom: -14%;
+  }
+
+  .full-card-price
+  {
+    display: none;
+  }
+
+}
+

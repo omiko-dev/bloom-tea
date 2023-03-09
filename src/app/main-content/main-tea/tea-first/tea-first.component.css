@@ -32,3 +32,16 @@ h1
 
 
 
+@media screen and (max-width: 767px){
+
+  section
+  {
+    height: 400px;
+  }
+
+  .bg h1
+  {
+    font-size: 35px;
+  }
+
+}

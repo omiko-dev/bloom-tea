@@ -9,9 +9,9 @@
     <h1>Filter by</h1>
     <hr>
 
-    <button (click)="price()">Price  <span>{{ plus1 }}</span></button>
+    <button (click)="price()">Price </button>
 
-    <ul class="Collection" [ngClass]="collStyle2 ? 'labels' : ''">
+    <ul class="Collection" [ngClass]="collStyle ? 'labels' : ''">
       <li>
         <input type="range" class="form-range" id="customRange1" min="2" max="20" [(ngModel)]="Price">
       </li>

@@ -12,7 +12,7 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a  routerLink="/Home">Home</a></li>
-      <li class="breadcrumb-item"><a routerLink="/Tea">Tea</a></li>
+      <li class="breadcrumb-item"><a [routerLink]="arr.type == 'extras' ? '/Extras' : '/Tea'">{{ arr.type == 'extras' ? 'Extras' : 'Tea' }}</a></li>
       <li class="breadcrumb-item active" >{{arr.name}}</li>
     </ol>
   </nav>
@@ -37,39 +37,21 @@
 
     <p *ngIf="arr.size" style="font-weight: 400;">Size - {{arr.size}}Gr</p>
 
-    <p style="margin-bottom: 5px;">Quantity:</p>
-
-    <input  type="number" name="number" value="1" min="1"  [(ngModel)]="productNum">
-
     <button
+    class="btn1"
     (click)="cartAdder()"
-    style="width: 306px;
-    height: 43.5px;
-    padding: 8px 16px;
-    display: grid;
-    place-content: center;
+    style="
     background: none;
-    border: 2px solid var(--col-1);
-    color: var(--col-1);
-    margin-top: 20px;
-    font-family: var(--font-3);
-    font-size: 17px;"
+    color: var(--col-1);;"
     >Add to Cart</button>
 
     <button
+    class="btn2"
     (click)="cartAdder()"
     routerLink="/Buy"
-    style="width: 306px;
-    height: 43.5px;
-    padding: 8px 16px;
-    display: grid;
-    place-content: center;
+    style="
     background: var(--col-1);
-    border: 2px solid var(--col-1);
-    color: #fff;
-    margin-top: 20px;
-    font-family: var(--font-3);
-    font-size: 17px;"
+    color: #fff;"
     >Buy Now</button>
 
   </div>

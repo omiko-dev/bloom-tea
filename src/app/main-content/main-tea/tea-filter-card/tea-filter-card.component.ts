@@ -27,37 +27,18 @@ export class TeaFilterCardComponent implements OnInit {
   public collStyle!: boolean;
   public collStyle2!: boolean;
   public collStyle3!: boolean;
-  public num: number = -1;
 
   Collection() {
-    this.num += 1;
-
-    if (this.num % 2 === 0) {
-      this.collStyle = true;
-    } else {
-      this.collStyle = false;
-    }
+    this.collStyle = !this.collStyle;
   }
 
   public len: number = 5;
   price() {
-    this.num += 1;
-
-    if (this.num % 2 === 0) {
-      this.collStyle2 = true;
-    } else {
-      this.collStyle2 = false;
-    }
+    this.collStyle2 = !this.collStyle2;
   }
 
   Size() {
-    this.num += 1;
-
-    if (this.num % 2 === 0) {
-      this.collStyle3 = true;
-    } else {
-      this.collStyle3 = false;
-    }
+    this.collStyle3 = !this.collStyle3
   }
 
   public typeArr: any = ['Classic', 'Herbal Tea', 'Special Edition'];
@@ -65,10 +46,8 @@ export class TeaFilterCardComponent implements OnInit {
     const nativeElement = event.target as HTMLInputElement;
     if (nativeElement.checked && nativeElement.value === '') {
       this.typeArr = ['Classic', 'Herbal Tea', 'Special Edition'];
-      console.log(this.typeArr);
     } else {
       this.typeArr = [nativeElement.value];
-      console.log(this.typeArr);
     }
   }
 

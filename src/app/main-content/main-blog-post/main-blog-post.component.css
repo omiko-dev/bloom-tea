@@ -134,3 +134,107 @@ i
 {
     color: rgb(95, 95, 249);
 }
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+  .main
+  {
+    width: 48pc;
+  }
+
+  .post
+  {
+    width: 43pc;
+  }
+
+  .post h1
+  {
+    width: 41pc;
+  }
+
+  .post img
+  {
+    width: 41pc;
+  }
+
+  .person
+  {
+    width: 41pc;
+  }
+
+  .post .content
+  {
+    width: 41pc;
+  }
+
+  hr
+  {
+    width: 41pc;
+  }
+
+  .icons
+  {
+    width: 41pc;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 767px){
+
+  .main
+  {
+    width: 20pc;
+  }
+
+  .main .post 
+  {
+    width: 20pc;
+    border-bottom: none;
+  }
+
+  .post h1
+  {
+    width: 20pc;
+  }
+
+  .post img 
+  {
+    width: 20pc;
+  }
+
+  .post .content
+  {
+    width: 19pc;
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .main .post .person
+  {
+    width: 19.5pc;
+  }
+
+  .person p 
+  {
+    font-size: 10px;
+  }
+
+  .icons  
+  {
+    width: 19pc;
+    margin-left: 5px;
+  }
+
+  hr 
+  {
+    width: 20pc;
+  }
+
+}
+

@@ -61,7 +61,7 @@ section
   margin-block: 10px;
 }
 
-input:is(:focus) ~ .searchBox
+input:focus ~ .searchBox
 {
   display: block;
 }
@@ -101,7 +101,7 @@ input
 .market
 {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   color: #fff;
   align-items: center;
 }
@@ -251,6 +251,47 @@ hr
 .in_list::-webkit-scrollbar
 {
   width: 0;
+}
+
+
+
+@media screen and (max-width: 767px){
+
+  .search
+  {
+    margin-left: 10px;
+  }
+
+  .market .logIn
+  {
+    display: none;
+  }
+
+  .market i
+  {
+    position: absolute;
+    top: -56px;
+    right: 6.5%;
+    font-size: 28px;
+  }
+
+
+  .list
+  {
+    width: 100%;
+  }
+
+  .in_list 
+  {
+    height: 52%;
+  }
+
+  .close
+  {
+    right: -100%;
+  }
+
+
 }
 
 

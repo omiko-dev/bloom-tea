@@ -53,3 +53,29 @@ section .blog a
   font-family: var(--font-2);
   font-weight: 300;
 }
+
+
+
+@media screen  and (max-width: 767px) {
+
+  section
+  {
+    grid-template-rows: 400px 400px;
+  }
+
+  section .blog a
+  {
+    font-size: 31px;
+  }
+
+
+  section .blog-text .text
+  {
+    font-size: 17px;
+  }
+
+}
+
+
+
+

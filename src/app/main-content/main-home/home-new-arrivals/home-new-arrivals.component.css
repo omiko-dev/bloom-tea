@@ -127,6 +127,81 @@ header p
   background-color: #9DACCA;
 }
 
+img
+{
+  width: 450px;
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section
+  {
+    height: 815px;
+  }
+
+  .cards
+  {
+    flex-direction: column;
+    gap: 20px;
+    margin-inline: 32px;
+    overflow-x: scroll;
+  }
+}
+
+
+
+@media screen and (max-width: 767px){
+
+
+  section
+  {
+    height: 600px;
+  }
+
+
+  header h1::before
+  {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
+  header h1::after
+  {
+    width: 100%;
+    top: 100%;
+    left: 0;
+  }
+
+  header p
+  {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  img
+  {
+    width: 245px;
+  }
+
+  .cards
+  {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-inline: 10px;
+  }
+
+  .box
+  {
+    height: 77%;
+  }
+
+}
 
 
 

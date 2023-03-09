@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SecondNavComponent {
 
+
+
+  public listCss: boolean = false;
+
+  animation(){
+    this.listCss = !this.listCss;
+  }
+
+
 }

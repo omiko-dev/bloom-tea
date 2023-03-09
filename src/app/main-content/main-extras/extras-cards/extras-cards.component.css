@@ -194,3 +194,35 @@ input[type=range]:focus::-ms-fill-upper {
   color: #636363;
   font-size: 22px;
 }
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .img1
+  {
+    width: 485px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+  section
+  {
+    grid-template-columns: none;
+    grid-template-rows: 300px auto;
+  }
+
+  .img1
+  {
+    width: 305px;
+  }
+
+}
+
+
+
+

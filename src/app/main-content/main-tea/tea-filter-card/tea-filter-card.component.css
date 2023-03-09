@@ -249,7 +249,51 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 
+.gap
+{
+  gap: 50px;
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .img1,
+  .img2 {
+    width: 485px;
+  }
+}
+
+
+
+@media screen and (max-width: 767px){
+
+  section
+  {
+    display: grid;
+    grid-template-rows: 582px auto;
+    width: 100%;
+    height: fit-content;
+    font-family: var(--font-1);
+    grid-template-columns: none;
+  }
+
+  .img1,
+  .img2 {
+    width: 305px;
+  }
+
+  .gap
+  {
+    gap: 0;
+  }
+
+
+}
 
 
 
 
+
+
+/* 581 */

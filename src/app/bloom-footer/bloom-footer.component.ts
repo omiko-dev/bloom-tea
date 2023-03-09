@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class BloomFooterComponent {
 
+
+  scrollUp() {
+    window.scroll(0, 0);
+  }
+
+
 }

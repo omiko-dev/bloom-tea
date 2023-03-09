@@ -36,3 +36,15 @@ button:hover {
   color: black;
   border: 1px solid;
 }
+
+
+
+@media screen and (max-width: 767px){
+
+  section 
+  {
+    width: 20pc
+  }
+
+}
+

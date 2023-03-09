@@ -36,13 +36,13 @@ section
   width: 300px;
   height: 1px;
   background-color: #000;
-  left: 399px;
+  left: 365px;
   top: 26px;
 }
 
 .main
 {
-  width: 53%;
+  width: 847px;
   height: 500px;
 }
 
@@ -133,3 +133,86 @@ input:focus
 {
   background-color: var(--col-2);
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+  .main
+  {
+    width: 98%;
+  }
+
+
+  .title::before
+  {
+    width: 100%;
+    left: 0;
+    top: 100%;
+  }
+
+  .title::after
+  {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px){
+
+  .title::before
+  {
+    width: 100%;
+    left: 0;
+    top: 100%;
+  }
+
+  .title::after
+  {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  section
+  {
+    flex-direction: column;
+    height: fit-content;
+    height: 1300px;
+  }
+
+  .main
+  {
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+    margin-left: 5px;
+  }
+
+  .left input
+  {
+    width: 225px;
+  }
+
+}
+
+
+
+
+
+
+
+

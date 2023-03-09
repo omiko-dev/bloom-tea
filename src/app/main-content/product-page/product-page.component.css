@@ -60,4 +60,84 @@
   width: 72px;
 }
 
+.btn1, .btn2
+{
+  width: 306px;
+  height: 43.5px;
+  padding: 8px 16px;
+  display: grid;
+  place-content: center;
+  border: 2px solid var(--col-1);
+  margin-top: 20px;
+  font-family: var(--font-3);
+  font-size: 17px;
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+  .card-place
+  {
+    grid-template-columns: 50% 50%;
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+
+  .product-img img
+  {
+    width: 370px;
+  }
+
+  .breadcrumb
+  {
+    margin-left: 2.6%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 767px){
+
+  section
+  {
+    margin-bottom: 200px;
+  }
+
+  .card-place
+  {
+    grid-template-columns: none;
+    grid-template-rows: 55% 45%;
+  }
+
+  .product-img img
+  {
+    right: 0;
+    width: 95%;
+    margin: 2.5%;
+  }
+
+  .product-info p
+  {
+    width: 278px;
+  }
+
+
+  .btn1, .btn2
+  {
+    width: 93%;
+  }
+
+  .breadcrumb
+  {
+    margin-left: 5px;
+  }
+
+}
+
+
+
+
+
 
