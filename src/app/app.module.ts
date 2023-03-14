@@ -54,6 +54,7 @@ import { SignUpComponent } from './sign-page/sign-up/sign-up.component';
 import { ContactMapComponent } from './main-content/main-contact/contact-map/contact-map.component';
 import { MainBuyComponent } from './main-content/main-buy/main-buy.component';
 import { BuyFirstComponent } from './main-content/main-buy/buy-first/buy-first.component';
+import { AngularFireModule } from '@angular/fire/compat'
 
 @NgModule({
   declarations: [
@@ -98,15 +99,7 @@ import { BuyFirstComponent } from './main-content/main-buy/buy-first/buy-first.c
     FormsModule,
     AccordionModule,
     CarouselModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyB9ncLr0ygiIDjCgr-6t4OGndwri3I-H3I',
-    }),
-    AgmDirectionModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAnalytics(() => getAnalytics()),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
-    provideRemoteConfig(() => getRemoteConfig()),
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],

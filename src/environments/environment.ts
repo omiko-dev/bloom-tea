@@ -1,4 +1,5 @@
 export const environment = {
+  // production: false,
   firebase: {
     projectId: 'bool-tea',
     appId: '1:799932698296:web:13dca9108576c1bba1ae4d',

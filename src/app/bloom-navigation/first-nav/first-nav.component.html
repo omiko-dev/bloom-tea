@@ -12,6 +12,7 @@
       <input type="text" placeholder="Search..." [(ngModel)]="divStyle">
 
 
+
       <div class="searchBox">
         <div
         *ngFor="let el of TeaSearch"
@@ -26,7 +27,7 @@
         [ngClass]="search(el.name, divStyle) ? 'margin10' : ''"
         >
             <ng-container *ngIf="search(el.name, divStyle)">
-              <div class="img"routerLink="/Home"><img [src]="el.image" alt="image" style="width: 50px; height: 50px;"></div>
+              <div class="img"><img [src]="el.image" alt="image" style="width: 50px; height: 50px;"></div>
 
               <div style="margin-left: 10%; font-size: 16px;">
                 <p style="margin: 0; color: #fff;">{{ el.name }}</p>

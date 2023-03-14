@@ -3,30 +3,18 @@
 
 <section>
   <div class="main d-flex">
-    <label for="Firstname">Enter your Firstname</label>
-    <input type="text">
+
+
+    <label for="email"  >Enter your Email</label>
+    <input type="email"[(ngModel)]="email">
 
     <br>
 
-    <label for="Lastname">Enter your Lastname</label>
-    <input type="text">
-
-    <br>
-
-    <label for="email">Enter your Email</label>
-    <input type="email">
-
-    <br>
-
-    <label for="password">Enter your password</label>
-    <input type="password">
-    <br>
-
-    <label for="password">Enter your password again</label>
-    <input type="password">
+    <label for="password" >Enter your password</label>
+    <input type="password"[(ngModel)]="password">
   </div>
 
-  <button>Enter</button>
+  <button (click)="register()">Enter</button>
 </section>
 
 

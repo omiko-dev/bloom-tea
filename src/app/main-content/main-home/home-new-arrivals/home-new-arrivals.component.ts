@@ -12,8 +12,6 @@ export class HomeNewArrivalsComponent {
 
   constructor(private TeaEl: LocalService) {
     this.arr = this.TeaEl.GetTeaApi();
-    console.log(this.arr);
-
   }
 
 

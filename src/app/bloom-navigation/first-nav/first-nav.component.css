@@ -61,7 +61,7 @@ section
   margin-block: 10px;
 }
 
-input:focus ~ .searchBox
+input:not(:placeholder-shown) ~ .searchBox
 {
   display: block;
 }
@@ -281,7 +281,7 @@ hr
     width: 100%;
   }
 
-  .in_list 
+  .in_list
   {
     height: 52%;
   }

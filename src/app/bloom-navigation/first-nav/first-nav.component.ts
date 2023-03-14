@@ -9,7 +9,9 @@ import { LocalService } from 'src/app/service/local.service';
 export class FirstNavComponent implements OnInit {
   public cartArr: any = [];
 
-  public fullPrice: number = 0
+  public fullPrice: number = 0;
+
+  none: any = undefined;
 
   TeaSearch: any;
 

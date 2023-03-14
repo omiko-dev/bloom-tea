@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LocalService } from 'src/app/service/local.service';
 // import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
@@ -7,21 +8,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-in.component.css'],
 })
 export class SignInComponent {
-  email!: string;
-  password!: string;
+  email : string = '';
+  password: string = '';
 
-  // constructor(private auth: AngularFireAuth) {}
 
-  // onSubmit() {
-  //   this.auth
-  //     .signInWithEmailAndPassword(this.email, this.password)
-  //     .then((userCredential: { user: { email: any; }; }) => {
-  //       // User logged in successfully
-  //       console.log('Logged in as', userCredential.user.email);
-  //     })
-  //     .catch((error: any) => {
-  //       // Handle login error
-  //       console.error(error);
-  //     });
-  // }
+  constructor(private auth: LocalService){}
+
+
+
+  login() {
+
+    if (this.email == '') {
+      alert('please enter email');
+      return
+    }
+
+    if (this.password == ''){
+      alert('please enter password');
+      return
+    }
+
+    this.auth.login(this.email, this.password);
+    this.email = '';
+    this.password = '';
+
+  }
+
 }
