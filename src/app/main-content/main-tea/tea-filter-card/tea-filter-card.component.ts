@@ -41,13 +41,16 @@ export class TeaFilterCardComponent implements OnInit {
     this.collStyle3 = !this.collStyle3
   }
 
+  public fontBoldStyle: string = '';
   public typeArr: any = ['Classic', 'Herbal Tea', 'Special Edition'];
   typeFillter(event: Event) {
     const nativeElement = event.target as HTMLInputElement;
     if (nativeElement.checked && nativeElement.value === '') {
       this.typeArr = ['Classic', 'Herbal Tea', 'Special Edition'];
+      this.fontBoldStyle = '';
     } else {
       this.typeArr = [nativeElement.value];
+      this.fontBoldStyle = nativeElement.value;
     }
   }
 

@@ -13,26 +13,26 @@
       <button (click)="Collection()">Collection</button>
       <ul class="Collection" [ngClass]="collStyle ? 'labels' : ''">
         <li>
-          <label for="All" >
-            <input type="radio" name="name" id="All" value="" checked (change)="typeFillter($event)">
+          <label for="All" [ngClass]="fontBoldStyle == '' ? 'boldFont' : ''">
+            <input type="radio" name="name" id="All" value="" checked (change)="typeFillter($event)" >
             All
           </label>
         </li>
         <li>
-          <label for="Classic">
-            <input type="radio" name="name" id="Classic" value="Classic"  (change)="typeFillter($event)">
+          <label for="Classic" [ngClass]="fontBoldStyle == 'Classic' ? 'boldFont' : ''">
+            <input type="radio" name="name" id="Classic" value="Classic"  (change)="typeFillter($event)" >
             Classic
           </label>
         </li>
         <li>
-          <label for="Herbal">
-            <input type="radio" name="name" id="Herbal" value="Herbal Tea" (change)="typeFillter($event)">
+          <label for="Herbal" [ngClass]="fontBoldStyle == 'Herbal Tea' ? 'boldFont' : ''">
+            <input type="radio" name="name" id="Herbal" value="Herbal Tea" (change)="typeFillter($event)" >
             Herbal Tea
           </label>
         </li>
         <li>
-          <label for="Special">
-            <input type="radio" name="name" id="Special" value="Special Edition" (change)="typeFillter($event)">
+          <label for="Special" [ngClass]="fontBoldStyle == 'Special Edition' ? 'boldFont' : ''">
+            <input type="radio" name="name" id="Special" value="Special Edition" (change)="typeFillter($event)" >
             Special Edition
           </label>
         </li>
