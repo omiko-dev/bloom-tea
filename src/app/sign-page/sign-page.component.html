@@ -1,18 +1,12 @@
-
-
 <section class="d-flex">
 
   <div class="main">
 
     <div class="button">
-      <button class="btn1" (click)="test = true" [ngClass]="test ? 'btn-true' : 'btn-false'">Sing in</button>
-
-      <button class="btn2" (click)="test = false" [ngClass]="test ? 'btn-false' : 'btn-true'">Sing up</button>
+      <app-sign-in />
     </div>
 
-    <app-sign-in [ngClass]="test ? 'block' : 'none'"></app-sign-in>
 
-    <app-sign-up [ngClass]="test ? 'none' : 'block'"></app-sign-up> 
   </div>
 
 

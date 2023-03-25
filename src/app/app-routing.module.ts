@@ -6,7 +6,6 @@ import { MainTeaComponent } from './main-content/main-tea/main-tea.component';
 import { NotFoundErrorComponent } from './error/not-found-error.component';
 import { MainAboutComponent } from './main-content/main-about/main-about.component';
 import { ProductPageComponent } from './main-content/product-page/product-page.component';
-import { MainBlogComponent } from './main-content/main-blog/main-blog.component';
 import { MainBlogPostComponent } from './main-content/main-blog-post/main-blog-post.component';
 import { MainContactComponent } from './main-content/main-contact/main-contact.component';
 import { SignPageComponent } from './sign-page/sign-page.component';
@@ -23,15 +22,13 @@ const routes: Routes = [
 
   { path: 'Product', component: ProductPageComponent },
 
-  { path: 'Blog', component: MainBlogComponent },
-
   { path: 'Post', component: MainBlogPostComponent },
 
   { path: 'Contact', component: MainContactComponent },
 
   { path: 'About', component: MainAboutComponent },
 
-  { path: 'Registre', component: SignPageComponent },
+  { path: 'admin', component: SignPageComponent },
 
   { path: 'Buy', component: MainBuyComponent },
 

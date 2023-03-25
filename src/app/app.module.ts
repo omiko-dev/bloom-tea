@@ -26,9 +26,6 @@ import { ProductPageComponent } from './main-content/product-page/product-page.c
 import { ProductPageFirstComponent } from './main-content/product-page/product-page-first/product-page-first.component';
 import { AccordionModule } from 'primeng/accordion';
 import { CarouselModule } from 'primeng/carousel';
-import { MainBlogComponent } from './main-content/main-blog/main-blog.component';
-import { BlogFirstComponent } from './main-content/main-blog/blog-first/blog-first.component';
-import { BlogCardsComponent } from './main-content/main-blog/blog-cards/blog-cards.component';
 import { MainBlogPostComponent } from './main-content/main-blog-post/main-blog-post.component';
 import { MainContactComponent } from './main-content/main-contact/main-contact.component';
 import { ContactFirstComponent } from './main-content/main-contact/contact-first/contact-first.component';
@@ -50,7 +47,6 @@ import {
 } from '@angular/fire/remote-config';
 import { SignPageComponent } from './sign-page/sign-page.component';
 import { SignInComponent } from './sign-page/sign-in/sign-in.component';
-import { SignUpComponent } from './sign-page/sign-up/sign-up.component';
 import { ContactMapComponent } from './main-content/main-contact/contact-map/contact-map.component';
 import { MainBuyComponent } from './main-content/main-buy/main-buy.component';
 import { BuyFirstComponent } from './main-content/main-buy/buy-first/buy-first.component';
@@ -79,15 +75,11 @@ import { AngularFireModule } from '@angular/fire/compat'
     AboutInfoComponent,
     ProductPageComponent,
     ProductPageFirstComponent,
-    MainBlogComponent,
-    BlogFirstComponent,
-    BlogCardsComponent,
     MainBlogPostComponent,
     MainContactComponent,
     ContactFirstComponent,
     SignPageComponent,
     SignInComponent,
-    SignUpComponent,
     ContactMapComponent,
     MainBuyComponent,
     BuyFirstComponent,
